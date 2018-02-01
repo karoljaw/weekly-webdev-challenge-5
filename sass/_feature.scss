@@ -1,0 +1,139 @@
+.row {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-box {
+    margin: 7rem 0;
+    flex: 0 0 289px;
+    padding: 0 2rem;
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        margin-top: 2rem;
+    }
+    &__text {
+        font-size: 1.4rem;
+        color: rgb(231, 231, 231);
+        margin-top: 1rem;
+    }
+}
+
+.feature__row {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .feature__row {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+
+.feature-8 {
+    max-width: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .feature-8 {
+        max-width: 70%;  
+        text-align: left;           
+    }
+}
+
+.feature-4 {
+    max-width: 100%;
+    padding: 3rem;
+
+}
+
+@media (min-width: 768px) {
+    .feature-4 {
+        max-width: 30%; 
+        margin: 5rem;            
+    }
+}
+
+.feature-4 .foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.foto1 {
+    background-image: url("img/person1.jpg");
+    background-size: cover;
+    background-position: -80px;
+    background-repeat: no-repeat;
+}
+
+.foto2 {
+    background-image: url("img/person2.jpg");
+    background-size: cover;
+    background-position: -60px ;
+    background-repeat: no-repeat;
+}
+
+.foto3 {
+    background-image: url("img/person3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.foto4 {
+    background-image: url("img/person4.jpg");
+    background-size: cover;
+    background-position: -60px;
+    background-repeat: no-repeat;
+}
+
+.feature__text {
+    font-size: 1.8rem;
+    color: var(--color-black);
+}
+
+.dots {
+    width: 105px;
+    margin: 0 auto;
+}
+
+.dot {
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }

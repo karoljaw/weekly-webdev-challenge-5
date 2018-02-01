@@ -1,0 +1,62 @@
+.form {
+    margin-top: 8rem;
+    flex: 1 1 400px;
+    width: 100%;
+}
+
+.input {
+    font-family: 'Open Sans', sans-serif;
+    flex: 1;
+    padding: 2rem;
+    outline: none;
+    margin-top: 1rem;
+    border-radius: 5px;
+    line-height: 100%;
+    font-size: 1.8rem;
+    &:first-child{
+        margin-right: 0.75rem;
+    }
+    &:last-child{
+        margin-left: 0.75rem;
+    }    
+}
+
+@media (max-width: 1100px) {
+      .input {
+          flex-basis: 100%;
+        &:first-child{
+            margin-right: 0rem;
+        }
+        &:last-child{
+            margin-left: 0rem;
+        }
+      }  
+}
+.textarea {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 2rem;
+    height: 15rem;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+}
+
+.submit {
+    border: none;
+    display: block;
+    margin-right: auto;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+}
+
+::placeholder {
+    font-size: 1.8rem;
+}
+
+.input::placeholder {
+    font-size: 1.8rem;
+    position: relative;
+    top: 3px;
+}

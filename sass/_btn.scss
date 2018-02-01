@@ -1,0 +1,18 @@
+.btn {
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    background-color: var(--color-red);
+    padding: .9em 3em;
+    border-radius: .2em;
+    display: inline-block;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        background-color: rgb(247, 49, 49);
+    }
+    &--small {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+    }
+}

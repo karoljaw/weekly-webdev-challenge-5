@@ -1,0 +1,80 @@
+.section__feature {
+    background-color: var(--color-blue);
+}
+
+.section__title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    &--black {
+        color: var(--color-black);
+    }
+}
+
+.section__subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    &--black {
+        color: var(--color-black);
+    }
+}
+
+.section__line {
+    max-width: 28rem;
+    border-top: 1px solid white;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 2rem;
+    &--black {
+        border-top: 1px solid var(--color-black);
+    }
+}
+
+.section__line::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.5rem;
+}
+
+.section__line--black::before {
+    background-color: var(--color-black);
+    left: 0px;
+}
+
+.section__line::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: -0.5rem;
+}
+
+.section__line--black::after {
+    background-color: var(--color-black);
+}
+
+.section__grey {
+    text-align: center;
+    background-color: var(--color-grey);
+}
+
+.section__gallery {
+  background-color: white;
+  text-align: center;
+}
+
+.section__testimonials {
+    background-color: white;
+}
+
+.section__contact {
+    background-color: var(--color-blue);
+}

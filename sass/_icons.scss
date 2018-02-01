@@ -1,0 +1,42 @@
+.icon {
+    display: inline-block;
+    width: 6em;
+    height: 6em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: white;
+  }
+
+  .icon-arrow {
+    width: 10rem;
+    height: 10rem;
+    fill: var(--color-black);
+    position: absolute;
+    left: 0;
+  }
+
+  .icon-media {
+    width: 4rem;
+    height: 4rem;
+}
+
+.icon-contact {
+    width: 2rem;
+    height: 2rem;
+    fill: #e7e7e7;
+    transition: .3s;
+}
+
+.icon-mail {
+    position: relative;
+    top: 5px;
+}
+
+.icon-media {
+    fill: #e7e7e7;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        fill: white;
+    }
+}

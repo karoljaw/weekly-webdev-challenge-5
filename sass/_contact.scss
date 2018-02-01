@@ -1,0 +1,46 @@
+.contact {
+    flex: 1 1 300px;
+ 
+    font-size: 1.8rem;
+    text-align: left;
+    color: white;
+    margin-top: 8rem;
+    margin-right: 2rem;
+    color: #e7e7e7;
+    &__hours {
+        margin-bottom: 2rem;
+    }
+    &__hours--bold {
+        font-weight: 700;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    &__text {
+        padding-left: 5px;
+    }
+ }
+ 
+ .contact-list {
+     &__item {
+         line-height: 4rem;
+     }
+ }
+ 
+ .contact__link {
+     color: #e7e7e7;
+     text-decoration: none;
+     transition: .3s;
+ }
+ 
+ .contact__link:hover {
+     color: white;
+ }
+ 
+ .contact__link:hover .icon-contact {
+     fill: white;
+     transform: scale(1.2);
+ }
+
+ .social {
+    margin-top: 4rem;
+}
