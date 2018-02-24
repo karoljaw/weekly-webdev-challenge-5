@@ -1,12 +1,26 @@
 .header {
-    background-color: var(--color-dark-blue);
-    height: 550px;
+    background-image: url("../img/header-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    position: relative;
+    height: 800px;
+    &__container {
+        position: absolute;
+        transform: translateY(70%);
+    }
     &__image {
        border-radius: 5px;
        position: absolute;
        right: 3rem;
        top: 6rem;
     } 
+}
+
+@media (min-width: 1200px) {
+    .header {
+        background-position: center top;
+    }
 }
 
 .heading-primary--medium {

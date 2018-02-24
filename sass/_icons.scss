@@ -40,3 +40,13 @@
         fill: white;
     }
 }
+
+.icon-menu {
+    z-index: 20;
+    cursor: pointer;
+    @media (min-width: 800px) {
+        display: none;
+    }
+}
+
+

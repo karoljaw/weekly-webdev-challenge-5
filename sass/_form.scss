@@ -46,17 +46,29 @@
 .submit {
     border: none;
     display: block;
-    margin-right: auto;
     margin-top: 1.5rem;
     border-radius: 5px;
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .submit {
+    width: auto;
+    }
 }
 
 ::placeholder {
+    font-size: 1.4rem;
+}
+
+@media (min-width: 400px) {
+    ::placeholder {
     font-size: 1.8rem;
+    }
 }
 
 .input::placeholder {
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
     position: relative;
     top: 3px;
 }

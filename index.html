@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weekly webdev challenge 5</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -19,33 +20,37 @@
                 </h1>
                 <ul class="nav__menu">
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Services</a>
+                        <a href="#services" class="nav__link">Services</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Work</a>
+                        <a href="#work" class="nav__link">Work</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Testimonials</a>
+                        <a href="#testimonials" class="nav__link">Testimonials</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#" class="nav__link">Contact</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
+                <svg class="icon icon-menu">
+                    <use xlink:href="img/symbol-defs.svg#icon-menu"></use>
+                </svg>
             </div>
         </div>
     </nav>
-    <header class="header">
+    <header class="header" id="home">
         <div class="wrapper padding">
-            <h1 class="heading-primary--medium pt pb-small">Kalau Kita mau, Pasti ada Jalan</h1>
-            <p class="heading-secondary--big pb-medium"> Semangat terus saudara-saudara!</p>
-            <a href="#" class="btn">More</a>
-            <!-- <img src="https://placeholdit.co//i/500x400?bg=ffffff" class="header__image"> -->
+            <div class="header__container">
+                <h1 class="heading-primary--medium pb-small">Kalau Kita mau, Pasti ada Jalan</h1>
+                <p class="heading-secondary--big pb-medium"> Semangat terus saudara-saudara!</p>
+                <a href="#" class="btn">More</a>
+            </div>
         </div>
     </header>
-    <div class="section__feature padding">
+    <div class="section__feature padding" id="services">
         <div class="wrapper">
             <h2 class="section__title">Our Services</h2>
             <p class="section__subtitle">our awesome services</p>
@@ -100,7 +105,7 @@
             <p class="heading-secondary--big">come from awesome imagination</p>
         </div>
     </div>
-    <div class="section__gallery padding">
+    <div class="section__gallery padding" id="work">
         <div class="wrapper">
             <h2 class="section__title section__title--black">Our Services</h2>
             <p class="section__subtitle section__subtitle--black">our awesome services</p>
@@ -111,61 +116,81 @@
                     <img src="img/one.jpg" alt="item1" class="gallery__image">
                     <div class="overlay">
                         <h3 class="overlay__title">Macankumbang</h3>
-                        <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident architecto possimus beatae ullam ratione.</p>
-                            <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
+                        <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident
+                            architecto possimus beatae ullam ratione.</p>
+                        <svg class="icon icon-eye">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
                     </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/two.jpg" alt="item2" class="gallery__image">
                     <div class="overlay">
-                            <h3 class="overlay__title">Macankumbang</h3>
-                            <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident architecto possimus beatae ullam ratione.</p>
-                                <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
-                        </div>
+                        <h3 class="overlay__title">Macankumbang</h3>
+                        <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident
+                            architecto possimus beatae ullam ratione.</p>
+                        <svg class="icon icon-eye">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/three.jpg" alt="item3" class="gallery__image">
                     <div class="overlay">
-                            <h3 class="overlay__title">Macankumbang</h3>
-                            <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident architecto possimus beatae ullam ratione.</p>
-                                <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
-                        </div>
+                        <h3 class="overlay__title">Macankumbang</h3>
+                        <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident
+                            architecto possimus beatae ullam ratione.</p>
+                        <svg class="icon icon-eye">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/four.jpg" alt="item4" class="gallery__image">
                     <div class="overlay">
-                            <h3 class="overlay__title">Macankumbang</h3>
-                            <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident architecto possimus beatae ullam ratione.</p>
-                                <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
-                        </div>
+                        <h3 class="overlay__title">Macankumbang</h3>
+                        <p class="overlay__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem officiis at sint soluta deserunt provident
+                            architecto possimus beatae ullam ratione.</p>
+                        <svg class="icon icon-eye">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/five.jpg" alt="item5" class="gallery__image">
                     <div class="overlay">
-                            <h3 class="overlay__title">Macankumbang</h3>
-                            <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores culpa rerum ab aliquam quo?</p>
-                                <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
-                        </div>
+                        <h3 class="overlay__title">Macankumbang</h3>
+                        <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolores culpa rerum ab aliquam quo?</p>
+                        <svg class="icon icon-eye">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                    </div>
                 </div>
                 <div class="gallery__item">
                     <img src="img/six.jpg" alt="item6" class="gallery__image">
                     <div class="overlay">
-                            <h3 class="overlay__title">Macankumbang</h3>
-                            <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore mollitia dolorum provident, odit corporis laudantium consequuntur cum aspernatur deserunt?</p>
-                                <svg class="icon icon-eye"><use xlink:href="img/sprite.svg#icon-eye"></use></svg>
-                        </div>
+                        <h3 class="overlay__title">Macankumbang</h3>
+                        <p class="overlay__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores inventore mollitia dolorum provident,
+                            odit corporis laudantium consequuntur cum aspernatur deserunt?</p>
+                        <svg class="icon icon-eye">
+                            <use xlink:href="img/sprite.svg#icon-eye"></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
             <a href="#" class="browse">
-                <span class="browse__text">Browse All</span> </span><br>
-                </span><span class="browse__text">300+</span>
+                <span class="browse__text">Browse All</span>
+                </span>
+                <br>
+                </span>
+                <span class="browse__text">300+</span>
                 <svg class="icon icon-arrow">
                     <use xlink:href="img/sprite.svg#icon-keyboard_arrow_down"></use>
                 </svg>
             </a>
         </div>
     </div>
-    <div class="section__testimonials padding--big">
+    <div class="section__testimonials padding--big" id="testimonials">
         <div class="wrapper">
             <h2 class="section__title section__title--black">What Our Happy Customer Say</h2>
             <p class="section__subtitle section__subtitle--black">lorem ipsum dolor sit amet</p>
@@ -180,7 +205,10 @@
                             </div>
                         </article>
                         <article class="feature-8">
-                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum modi laboriosam reprehenderit!</p>
+                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae
+                                vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt
+                                fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum
+                                modi laboriosam reprehenderit!</p>
                         </article>
                     </div>
                 </div>
@@ -191,7 +219,10 @@
                             </div>
                         </article>
                         <article class="feature-8">
-                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum modi laboriosam reprehenderit!</p>
+                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae
+                                vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt
+                                fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum
+                                modi laboriosam reprehenderit!</p>
 
                         </article>
                     </div>
@@ -203,7 +234,10 @@
                             </div>
                         </article>
                         <article class="feature-8">
-                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum modi laboriosam reprehenderit!</p>
+                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae
+                                vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt
+                                fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum
+                                modi laboriosam reprehenderit!</p>
                         </article>
                     </div>
                 </div>
@@ -214,7 +248,10 @@
                             </div>
                         </article>
                         <article class="feature-8">
-                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum modi laboriosam reprehenderit!</p>
+                            <p class="feature__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit illo explicabo atque, qui repudiandae
+                                vitae corporis quidem, doloribus sequi officia doloremque. Incidunt impedit corrupti nesciunt
+                                fugiat voluptatibus rem blanditiis, ipsam iste minima est possimus eius eligendi laborum
+                                modi laboriosam reprehenderit!</p>
                         </article>
                     </div>
                 </div>
@@ -233,10 +270,11 @@
             <p class="heading-secondary--big">Ready for 24/7</p>
         </div>
     </div>
-    <div class="section__contact padding">
+    <section id="map"></section>
+    <div class="section__contact padding" id="contact">
         <div class="wrapper">
-            <h2 class="section__title">Our Services</h2>
-            <p class="section__subtitle">our awesome services</p>
+            <h2 class="section__title">Contact</h2>
+            <p class="section__subtitle">Let's talk business, get in touch!</p>
             <div class="section__line"></div>
             <div class="row">
                 <div class="contact">
@@ -244,26 +282,29 @@
                     <p class="contact__hours">Monday to Friday / 7:00 - 18:00 Saturday / 9:00 - 15:00</p>
                     <dl class="contact-list">
                         <dd class="contact-list__item">
-                            <a href="#" class="contact__link"> 
+                            <a href="#" class="contact__link">
                                 <svg class="icon icon-contact">
-                                <use xlink:href="img/sprite.svg#icon-location"></use>
-                            </svg>
-                            <span class="contact__text">25 Silver Cost Avenue, MD 20910 Indonesia</span></a>
-                           
+                                    <use xlink:href="img/sprite.svg#icon-location"></use>
+                                </svg>
+                                <span class="contact__text">25 Silver Cost Avenue, MD 20910 Indonesia</span>
+                            </a>
+
                         </dd>
                         <dd class="contact-list__item">
-                                <a href="#" class="contact__link">
-                            <svg class="icon icon-contact">
-                                <use xlink:href="img/sprite.svg#icon-phone"></use>
-                            </svg>
-                            <span class="contact__text">(621) 555 6789</span></a>
+                            <a href="#" class="contact__link">
+                                <svg class="icon icon-contact">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <span class="contact__text">(621) 555 6789</span>
+                            </a>
                         </dd>
                         <dd class="contact-list__item">
-                                <a href="#" class="contact__link">
-                            <svg class="icon icon-contact icon-mail">
-                                <use xlink:href="img/sprite.svg#icon-mail"></use>
-                            </svg>
-                            <span class="contact__text">@macankumbang.net</span></a>
+                            <a href="#" class="contact__link">
+                                <svg class="icon icon-contact icon-mail">
+                                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                </svg>
+                                <span class="contact__text">@macankumbang.net</span>
+                            </a>
                         </dd>
                     </dl>
                     <div class="social">
@@ -283,7 +324,9 @@
                         <input type="text" placeholder="Name" class="input">
                         <input type="email" placeholder="Email (will not published)" class="input">
                     </div>
-                    <textarea name="message" placeholder="Message" class="textarea"></textarea>
+                    <div class="row">
+                        <textarea name="message" placeholder="Message" class="textarea"></textarea>
+                    </div>
                     <input type="submit" value="Send" class="btn submit">
                 </form>
             </div>
@@ -291,11 +334,17 @@
     </div>
     <div class="footer padding">
         <p class="footer__text">(c) copyright 2013 macankumbang</p>
-            <p class="footer__text footer__text--big">
-                    <span class="footer__text--bold">Macan</span>kumbank
-            </p>
+        <p class="footer__text footer__text--big">
+            <span class="footer__text--bold">Macan</span>kumbank
+        </p>
     </div>
-    <script src="testimonials.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLKworKWMoNHzlALI8Y1P4C4GiB4GAYRk&callback=initMap">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/testimonials.js"></script>
 </body>
 
 </html>
